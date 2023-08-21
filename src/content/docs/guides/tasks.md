@@ -1,0 +1,35 @@
+---
+title: Managing Tasks
+description: This guid will help you to understant how to get most out of the tasks page of this application
+---
+
+Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
+Writing a good guide requires thinking about what your users are trying to do.
+
+## All the fields associated with a task
+- Client: It could be any client for whom you are managing task. You will be managing the list of clients in Dropdowns menu. See this guide.
+- Task: It could be any higher level goal or task. You will be managing the list of possible task types in Dropdowns menu. See this guide.
+- Activity: It could be any activity that will be required to complete any task. Generally you will have multiple activities that needs to be performed in order to complete some task. You will be managing the list of activities in Dropdowns menu. See this guide.
+- Description: It describes your activities that need to be performed.
+- User: You can assign user to the task. Read this guid to learn about how to add or invite users.
+- Deadline Date: Deadline date of the task.
+- Reminder Date: You can set up reminder date as well.
+- Periodicity: It could be any one from thes - One_Off, Weekly, Monthly, Quarterly, Half_Yearly and Yearly.
+- Priority: You can set the priority of the task. Possible values are High, Medium or Low.
+- Status: Completed or Pending
+- Timesheet Entry status: If you have done timesheet entry for a task then this status will appear in the form of Ticked Clock.
+
+
+## Adding, editing and delting task
+- Navigate to Tasks page. Then click on Add Button. 
+- Alternativiy, you can also add a new task from Clients page. Navigate to Clients page. Select any client and then click on Related Tasks. Here you can add a new task for the selected client. You can add multiple tasks for the same clients and edit it by clicking on edit button.
+
+https://youtu.be/pGoVpOmEC-s
+
+## Action buttons associated with each task
+- Mark Complete
+- Mark Complete and recreate
+- Task Notes
+- Add Timesheet
+- View Timesheets
+## Filters and sorting

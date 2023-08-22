@@ -30,7 +30,7 @@ Writing a good guide requires thinking about what your users are trying to do.
 ![Action buttons](../../../assets/guides/clients/Action.png)
 
 ### View Client Details
-
+![Client Details](../../../assets/guides/clients/view-client-details.png)
 ### Adding client Notes
 ![Add client notes](../../../assets/guides/clients/adding-client-notes.png)
 ### Editing Client Notes
@@ -38,12 +38,11 @@ Writing a good guide requires thinking about what your users are trying to do.
 ### Adding/Editing Client Tasks
 ![View Client Task](../../../assets/guides/clients/AddingClientTask.png)
 
-### Composing and send emails
+### Composing and sending emails
+![Compose email](../../../assets/guides/clients/compose-email-1.png)
+![Compose email](../../../assets/guides/clients/compose-email-2.png)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LKvWFucd2Ug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Filters and sorting
-
-
-
-
-https://youtu.be/LKvWFucd2Ug
+## Filters
+You can very easily search and filter your clients by clicking on magnifying glass icon on the displayed table header.

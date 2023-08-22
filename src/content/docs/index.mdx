@@ -3,34 +3,33 @@ title: Welcome to Task Manager
 description: Get started building your docs site with Starlight.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: A productivity powerhouse!
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/featured-image.png
   actions:
-    - text: Example Guide
+    - text: Explore our guide
       link: /guides/example/
       icon: right-arrow
       variant: primary
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: Go to Task Manager App
+      link: https://t3-task-manager.vercel.app/
+      variant: "secondary"
       icon: external
 ---
 
 import { Card, CardGrid } from "@astrojs/starlight/components";
+import ContactForm from "../../components/ContactForm.astro";
+import Youtube from "../../components/YoutubePlaylist.astro";
 
-## Next steps
-
-<CardGrid stagger>
-  <Card title="Update content" icon="pencil">
-    Edit `src/content/docs/index.mdx` to see this page change.
+<CardGrid>
+  <Card title="Video Demo">
+    <Youtube />
   </Card>
-  <Card title="Add new content" icon="add-document">
-    Add Markdown or MDX files to `src/content/docs` to create new pages.
-  </Card>
-  <Card title="Configure your site" icon="setting">
+  {/* <Card title="Configure your site" icon="setting">
     Edit your `sidebar` and other config in `astro.config.mjs`.
   </Card>
   <Card title="Read the docs" icon="open-book">
     Learn more in [the Starlight Docs](https://starlight.astro.build/).
-  </Card>
+  </Card> */}
 </CardGrid>
+<ContactForm />

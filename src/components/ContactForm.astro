@@ -1,0 +1,38 @@
+
+---
+// src/components/Contactform.astro
+---
+<div class="not-content">
+    <html>
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+      </head>
+      <body>
+        <form class=" pl-4 py-4 pr-2 rounded-lg border-blue-200 border-2 hover:border-blue-300 duration-500" name="contact" netlify>
+           <div class="flex flex-row w-full gap-2">
+            <p>
+                <label>Name <input class="w-full py-1 px-2 rounded-lg border-solid border-2 hover:border-blue-500 duration-500" type="text" name="name" /></label>
+              </p>
+              <p>
+                <label>Email <input class="w-full py-1 px-2 rounded-lg border-solid border-2 hover:border-blue-500 duration-500" type="email" name="email" /></label>
+              </p>
+           </div>
+          
+         <div class="flex flex-row w-full">
+           
+            <textarea placeholder="message..." class="py-1 px-2 mr-2 my-4  w-full  rounded-lg border-solid border-2 hover:border-blue-500 duration-500" name="message"></textarea>
+         </div>
+          
+            <p>
+              <button type="submit" class="rounded-lg bg-blue-600 text-white hover:shadow-md hover:shadow-blue-400/50 px-4 py-1">Contact us</button>
+            </p>
+            <p
+            class="ml-2 mt-3 bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text font-semibold text-xs text-transparent">
+            * We will setup a trial version for you and send you the link to your email.
+          </p>
+          </form>
+      </body>
+    </html>
+  </div>
+  

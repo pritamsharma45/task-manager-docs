@@ -2,7 +2,7 @@
 title: Delete App Data
 description: Delete your application data
 ---
-import { YouTube } from 'astro-embed';
+
 ## 
 
 

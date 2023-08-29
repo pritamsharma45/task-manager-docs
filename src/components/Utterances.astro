@@ -1,6 +1,3 @@
----
-
----
 <div id="utterances-container" class="utterance-container"></div>
 
 <script>
@@ -8,21 +5,23 @@
   const container = document.querySelector("#utterances-container");
 
   Object.entries({
-    src: "https://utteranc.es/client.js",
-    repo:"pritamsharma45/task-manager-docs",
-    "issue-term": "pathname",
-    label: "post comments",
-    theme: "github-light",
+    src: "https://giscus.app/client.js",
+    "data-repo": "pritamsharma45/task-manager-docs",
     crossorigin: "anonymous",
+    "data-repo-id": "R_kgDOKJqYQA",
+    "data-category": "Q&A",
+    "data-category-id": "DIC_kwDOKJqYQM4CY8Aw",
+    "data-mapping": "pathname",
+    "data-strict": "0",
+    "data-reactions-enabled": "1",
+    "data-emit-metadata": "0",
+    "data-theme":"light",
+    "data-input-position": "bottom",
+    "data-lang": "en",
+    async: "true",
   }).forEach(([key, value]) => {
     script.setAttribute(key, value);
   });
 
   container?.appendChild(script);
 </script>
-<style>
-  .utterance-container {
-    max-width: 100%;
-    height: 100%;
-  }
-</style>

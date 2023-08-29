@@ -1,0 +1,1 @@
+const t=document.createElement("script"),n=document.querySelector("#utterances-container");Object.entries({src:"https://utteranc.es/client.js",repo:"pritamsharma45/task-manager-docs","issue-term":"pathname",label:"post comments",theme:"github-light",crossorigin:"anonymous"}).forEach(([e,s])=>{t.setAttribute(e,s)});n?.appendChild(t);

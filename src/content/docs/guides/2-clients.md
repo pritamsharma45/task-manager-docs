@@ -42,7 +42,9 @@ Writing a good guide requires thinking about what your users are trying to do.
 ![Compose email](../../../assets/guides/clients/compose-email-1.png)
 ![Compose email](../../../assets/guides/clients/compose-email-2.png)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LKvWFucd2Ug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+<div class="not-content">
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/LKvWFucd2Ug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 ## Filters
 You can very easily search and filter your clients by clicking on magnifying glass icon on the displayed table header.

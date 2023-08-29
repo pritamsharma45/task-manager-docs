@@ -1,0 +1,19 @@
+---
+title: Application Transfer
+description: dfsd
+---
+
+
+
+There are two ways to transfer the applicaion to the client.
+
+## Approach-1
+We will provision the  infrastructure required by the application by ourselves. We will manage database and hosting provider for you.
+You can follow this approach if you trust us with your data and the data is not very sensitive. Following this approach, we can transfer this application ( i.e url of the application) to you very easily. And also it will be easy for maintenance and bug fixing. 
+:::note
+We will sign NDA and will not share your data with any one.
+:::
+
+## Approach-2
+We will help you in provisioning all the infrastructure required by the application. This basically involves create creating few  accounts, getting credentials, deploying the application and bringing all the pieces together. We will help you with the featured [integrations](/guides/6-integrations) also. We will have to this over zoom or any other screen sharing application.
+

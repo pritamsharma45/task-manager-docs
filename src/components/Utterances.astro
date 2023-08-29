@@ -1,0 +1,28 @@
+---
+
+---
+<div id="utterances-container" class="utterance-container"></div>
+
+<script>
+  const script = document.createElement("script");
+  const container = document.querySelector("#utterances-container");
+
+  Object.entries({
+    src: "https://utteranc.es/client.js",
+    repo:"pritamsharma45/task-manager-docs",
+    "issue-term": "pathname",
+    label: "post comments",
+    theme: "github-light",
+    crossorigin: "anonymous",
+  }).forEach(([key, value]) => {
+    script.setAttribute(key, value);
+  });
+
+  container?.appendChild(script);
+</script>
+<style>
+  .utterance-container {
+    max-width: 100%;
+    height: 100%;
+  }
+</style>

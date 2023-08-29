@@ -5,6 +5,7 @@ description: This will guide you in setting up 3rd party app integrations.
 
 import CalendarIcon from "../../../components/icons/calendar.astro";
 import SlackIcon from "../../../components/icons/slack.astro";
+import DriveIcon from "../../../components/icons/drive.astro";
 
 ## Following integrations are supported
 
@@ -23,7 +24,21 @@ You can only send messages to public channel. By public channel it means that an
 ### Google Calendar
 
 <CalendarIcon />
+
 ![Google Calendar Integration](../../../assets/guides/integrations/google-calendar-authorization.png)
-:::note This authorization is different from the application authorization. This
+
+:::note
+This authorization is different from the application authorization. This
 is Google authorization. You need to be signed in to your google account. Once authorized
-you will be presented with a list of your google calendars. :::
+you will be presented with a list of your google calendars.
+:::
+
+### Google Drive
+
+<DriveIcon />
+![Google Drive Integration](../../../assets/guides/integrations/google-drive-setting.png)
+
+:::note
+The Google Drive folder where you want to store your files related to client
+notes and task notes need to be shared with the service account email address.
+:::

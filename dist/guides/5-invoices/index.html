@@ -3,9 +3,10 @@
 	<head>
 		<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Invoicing</title><link rel="canonical"/><link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml"/><meta name="generator" content="Astro v2.10.12"/><meta name="generator" content="Starlight v0.7.2"/><meta property="og:title" content="Invoicing"/><meta property="og:type" content="article"/><meta property="og:url"/><meta property="og:locale" content="en"/><meta property="og:description" content="This guide will show you how to generate Stripe Invoice for outstanding tasks that have been billed in timesheet entry."/><meta property="og:site_name" content="Task Manager"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Invoicing"/><meta name="twitter:description" content="This guide will show you how to generate Stripe Invoice for outstanding tasks that have been billed in timesheet entry."/><meta name="description" content="This guide will show you how to generate Stripe Invoice for outstanding tasks that have been billed in timesheet entry."/>
 		
-	<link rel="stylesheet" href="/_astro/404.ac96f6f6.css" />
+	<link rel="stylesheet" href="/_astro/404.17f1d3ad.css" />
 <style type="text/css">svg:where(.astro-C6VSOQAS){color:var(--sl-icon-color);font-size:var(--sl-icon-size, 1em);width:1em;height:1em}
-</style><script type="module" src="/_astro/hoisted.17f7fc48.js"></script></head>
+</style><script type="module" src="/_astro/hoisted.3407b17d.js"></script><style type="text/css">.utterance-container:where(.astro-UX6UFALN){max-width:100%;height:100%}
+</style><script src="/_astro/Utterances.astro_astro_type_script_index_0_lang.83b5294b.js" type="module"></script></head>
 	<body class="astro-NYFQ2LET">
 		
 <script>
@@ -280,31 +281,33 @@
 <a href="/guides/4-creating-timesheet-entry">See this guide</a> to know how to create timesheet entry.</p>
 <h3 id="fetching-tasks-for-invoicing">Fetching tasks for invoicing</h3>
 <ul>
-<li>Navigate to Invoices > Generate Invoice</li>
+<li>Navigate to Invoices &gt; Generate Invoice</li>
 <li>Select Client against whom you want to raise invoice</li>
 <li>Click on Generate Stripe Invoice
-<img alt="Generate Stripe Invoice"  src="/_astro/stripe-generate-invoice.5cb17c64_ivEc2.webp" width="1920" height="1080" loading="lazy" decoding="async">
+<img src="/_astro/stripe-generate-invoice.5cb17c64_ivEc2.webp" alt="Generate Stripe Invoice" width="1920" height="1080" loading="lazy" decoding="async">
 Above action will do the following:</li>
 <li>It will first create Stripe Customer if it does not exist.</li>
 <li>Then it will check if there is any outstanding tasks against the selected client.</li>
 <li>If there are outstanding tasks then it will generate Stripe Invoice for that.</li>
-<li><img alt="Stripe Invoices"  src="/_astro/stripe-invoice.ab38d627_Z1SbgKP.webp" width="1920" height="1080" loading="lazy" decoding="async"></li>
-</ul>
+<li><img src="/_astro/stripe-invoice.ab38d627_Z1SbgKP.webp" alt="Stripe Invoices" width="1920" height="1080" loading="lazy" decoding="async">
 <aside aria-label="Note" class="starlight-aside starlight-aside--note"><p class="starlight-aside__title" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" class="starlight-aside__icon"><path d="M12 11C11.7348 11 11.4804 11.1054 11.2929 11.2929C11.1054 11.4804 11 11.7348 11 12V16C11 16.2652 11.1054 16.5196 11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071C12.8946 16.5196 13 16.2652 13 16V12C13 11.7348 12.8946 11.4804 12.7071 11.2929C12.5196 11.1054 12.2652 11 12 11ZM12.38 7.08C12.1365 6.97998 11.8635 6.97998 11.62 7.08C11.4973 7.12759 11.3851 7.19896 11.29 7.29C11.2017 7.3872 11.1306 7.49882 11.08 7.62C11.024 7.73868 10.9966 7.86882 11 8C10.9992 8.13161 11.0245 8.26207 11.0742 8.38391C11.124 8.50574 11.1973 8.61656 11.29 8.71C11.3872 8.79833 11.4988 8.86936 11.62 8.92C11.7715 8.98224 11.936 9.00632 12.099 8.99011C12.2619 8.97391 12.4184 8.91792 12.5547 8.82707C12.691 8.73622 12.8029 8.61328 12.8805 8.46907C12.9582 8.32486 12.9992 8.16378 13 8C12.9963 7.73523 12.8927 7.48163 12.71 7.29C12.6149 7.19896 12.5028 7.12759 12.38 7.08ZM12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.3459 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7363 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM12 20C10.4178 20 8.87104 19.5308 7.55544 18.6518C6.23985 17.7727 5.21447 16.5233 4.60897 15.0615C4.00347 13.5997 3.84504 11.9911 4.15372 10.4393C4.4624 8.88743 5.22433 7.46197 6.34315 6.34315C7.46197 5.22433 8.88743 4.4624 10.4393 4.15372C11.9911 3.84504 13.5997 4.00346 15.0615 4.60896C16.5233 5.21447 17.7727 6.23984 18.6518 7.55544C19.5308 8.87103 20 10.4177 20 12C20 14.1217 19.1572 16.1566 17.6569 17.6569C16.1566 19.1571 14.1217 20 12 20Z"></path></svg>Note</p><section class="starlight-aside__content"><p>If generating Stripe customer fails due to Stripe’s server downtime or any other reason then the invoice generation will fail. In that case you can simply refresh it and try again</p></section></aside>
+</li>
+</ul>
 <h3 id="view-stripe-invoice-pdf-and-paylink">View Stripe Invoice PDF and Paylink</h3>
 <p>You can view the generated Invoice PDF and Payment page by clicking on the respective buttons on the Stripe Invoice tab.</p>
 <aside aria-label="Note" class="starlight-aside starlight-aside--note"><p class="starlight-aside__title" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" class="starlight-aside__icon"><path d="M12 11C11.7348 11 11.4804 11.1054 11.2929 11.2929C11.1054 11.4804 11 11.7348 11 12V16C11 16.2652 11.1054 16.5196 11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071C12.8946 16.5196 13 16.2652 13 16V12C13 11.7348 12.8946 11.4804 12.7071 11.2929C12.5196 11.1054 12.2652 11 12 11ZM12.38 7.08C12.1365 6.97998 11.8635 6.97998 11.62 7.08C11.4973 7.12759 11.3851 7.19896 11.29 7.29C11.2017 7.3872 11.1306 7.49882 11.08 7.62C11.024 7.73868 10.9966 7.86882 11 8C10.9992 8.13161 11.0245 8.26207 11.0742 8.38391C11.124 8.50574 11.1973 8.61656 11.29 8.71C11.3872 8.79833 11.4988 8.86936 11.62 8.92C11.7715 8.98224 11.936 9.00632 12.099 8.99011C12.2619 8.97391 12.4184 8.91792 12.5547 8.82707C12.691 8.73622 12.8029 8.61328 12.8805 8.46907C12.9582 8.32486 12.9992 8.16378 13 8C12.9963 7.73523 12.8927 7.48163 12.71 7.29C12.6149 7.19896 12.5028 7.12759 12.38 7.08ZM12 2C10.0222 2 8.08879 2.58649 6.4443 3.6853C4.79981 4.78412 3.51809 6.3459 2.76121 8.17317C2.00433 10.0004 1.8063 12.0111 2.19215 13.9509C2.578 15.8907 3.53041 17.6725 4.92894 19.0711C6.32746 20.4696 8.10929 21.422 10.0491 21.8079C11.9889 22.1937 13.9996 21.9957 15.8268 21.2388C17.6541 20.4819 19.2159 19.2002 20.3147 17.5557C21.4135 15.9112 22 13.9778 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7363 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM12 20C10.4178 20 8.87104 19.5308 7.55544 18.6518C6.23985 17.7727 5.21447 16.5233 4.60897 15.0615C4.00347 13.5997 3.84504 11.9911 4.15372 10.4393C4.4624 8.88743 5.22433 7.46197 6.34315 6.34315C7.46197 5.22433 8.88743 4.4624 10.4393 4.15372C11.9911 3.84504 13.5997 4.00346 15.0615 4.60896C16.5233 5.21447 17.7727 6.23984 18.6518 7.55544C19.5308 8.87103 20 10.4177 20 12C20 14.1217 19.1572 16.1566 17.6569 17.6569C16.1566 19.1571 14.1217 20 12 20Z"></path></svg>Note</p><section class="starlight-aside__content"><p>When you generate Stripe Invoice, it will also send email to the client with attached invoice pdf and payment page.</p></section></aside>
 <ul>
 <li>Invoice PDF
-<img alt="Invoice PDF"  src="/_astro/stripe-invoice-pdf.2e1c8db7_Z1GKANx.webp" width="1920" height="1080" loading="lazy" decoding="async"></li>
+<img src="/_astro/stripe-invoice-pdf.2e1c8db7_Z1GKANx.webp" alt="Invoice PDF" width="1920" height="1080" loading="lazy" decoding="async"></li>
 <li>Payment page
-<img alt="Payment page"  src="/_astro/stripe-paylink.d2bdf883_29Oke1.webp" width="1920" height="1080" loading="lazy" decoding="async"></li>
+<img src="/_astro/stripe-paylink.d2bdf883_29Oke1.webp" alt="Payment page" width="1920" height="1080" loading="lazy" decoding="async"></li>
 </ul>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/l47mSnE9-eY?si=7edt3Ge8N2oR3qff" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="not-content"><div id="utterances-container" class="utterance-container astro-UX6UFALN"></div></div>
 									</div>
 									<footer class="astro-3YYAFB3N">
 	<div class="meta flex astro-3YYAFB3N">
-		<a href="https://github.com/pritamsharma45/task-manager-docs/edit/main/src/content/docs/guides/5-invoices.md" class="flex astro-EEZ2TWJ6">
+		<a href="https://github.com/pritamsharma45/task-manager-docs/edit/main/src/content/docs/guides/5-invoices.mdx" class="flex astro-EEZ2TWJ6">
 			<svg aria-hidden="true" class="astro-EEZ2TWJ6 astro-C6VSOQAS" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.2em;"><path d="M22 7.24a1 1 0 0 0-.29-.71l-4.24-4.24a1 1 0 0 0-1.1-.22 1 1 0 0 0-.32.22l-2.83 2.83L2.29 16.05a1 1 0 0 0-.29.71V21a1 1 0 0 0 1 1h4.24a1 1 0 0 0 .76-.29l10.87-10.93L21.71 8c.1-.1.17-.2.22-.33a1 1 0 0 0 0-.24v-.14l.07-.05ZM6.83 20H4v-2.83l9.93-9.93 2.83 2.83L6.83 20ZM18.17 8.66l-2.83-2.83 1.42-1.41 2.82 2.82-1.41 1.42Z"/></svg>
 			Edit page
 		</a>
@@ -328,7 +331,7 @@ Above action will do the following:</li>
 				</span>
 			</a>
 </div>
-	<div id="utterances-container" class="utterance-container astro-RAJG2ROM"></div>
+	<!-- <Comments /> -->
 </footer>
 								</div>
 </div>

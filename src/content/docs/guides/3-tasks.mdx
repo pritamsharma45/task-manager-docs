@@ -1,26 +1,23 @@
 ---
 title: Managing Tasks
-description: This guid will help you to understant how to get most out of the tasks page of this application
+description: This guide is designed to help you maximize the benefits of the tasks page within this application. It will provide you with a comprehensive understanding of how to leverage the full potential of this feature.
 ---
 
 import Comments from "../../../components/Utterances.astro";
 
-Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
-Writing a good guide requires thinking about what your users are trying to do.
-
 ## All the fields associated with a task
 
-- Client: It could be any client for whom you are managing task. You will be managing the list of clients in Dropdowns menu. See this guide.
-- Task: It could be any higher level goal or task. You will be managing the list of possible task types in Dropdowns menu. See this guide.
-- Activity: It could be any activity that will be required to complete any task. Generally you will have multiple activities that needs to be performed in order to complete some task. You will be managing the list of activities in Dropdowns menu. See this guide.
-- Description: It describes your activities that need to be performed.
-- User: You can assign user to the task. Read this guid to learn about how to add or invite users.
-- Deadline Date: Deadline date of the task.
-- Reminder Date: You can set up reminder date as well.
-- Periodicity: It could be any one from thes - One_Off, Weekly, Monthly, Quarterly, Half_Yearly and Yearly.
-- Priority: You can set the priority of the task. Possible values are High, Medium or Low.
-- Status: Completed or Pending
-- Timesheet Entry status: If you have done timesheet entry for a task then this status will appear in the form of Ticked Clock.
+- Client: This refers to any client for whom you're managing tasks. You'll keep track of the list of clients in the Dropdowns menu. For more details, refer to this guide.
+- Task: A task represents a higher-level goal or objective. You'll manage the list of possible task types in the Dropdowns menu. More information can be found in this guide.
+- Activity: An activity is any action necessary to complete a task. Typically, multiple activities are required to accomplish a task. You'll maintain the list of activities in the Dropdowns menu. Check out this guide for further assistance.
+- Description: This field elaborates on the activities that need to be performed.
+- User: You have the option to assign a user to a task. Learn how to add or invite users by referring to this guide.
+- Deadline Date: The task's due date.
+- Reminder Date: You can also set a reminder date.
+- Periodicity: This refers to the frequency of the task, which could be One-Off, Weekly, Monthly, Quarterly, Half-Yearly, or Yearly.
+- Priority: You can specify the task's priority as High, Medium, or Low.
+- Status: Indicates whether the task is Completed or Pending.
+- Timesheet Entry Status: If you've recorded a timesheet entry for a task, this status will be indicated by a Ticked Clock icon.
 
 ## Adding, editing and delting task
 
@@ -38,6 +35,19 @@ https://youtu.be/pGoVpOmEC-s
 - View Timesheets
 
 ## Filters and sorting
+
+You can filter tasks by client, task, activity, user, status, deadline date, and timesheet entry status. You can find the search & filter icon on the header of the task table in the form of `magnifying glass`.
+
+## Features
+
+- You can view your tasks in both list and calendar views.
+- There are two types of calendar views : Inbuilt Calendar and Google Calendar.
+- To use Google Calendar, you need to integrate your google account with this application. Read this [guide](/guides/6-integrations#google-calendar) to learn how to integrate your google account.
+- Both calendar offer you the ability to view your task in day, week and month view. Agenda view is also available in both Calendar.
+- You can also integrate it with `slack` to receive `Slack Notification` whenever new task is created or updated. Read this [guide](/guides/6-integrations#slack) to learn how to integrate it with `slack`.
+- Task reminder notification is also inbuilt. Each user who has been assigned a task will receive a reminder notification on the reminder date and on the day of the deadline if the task is still pending.
+- You will also receive notification if you have turned on reminders on Googl Calendar.
+- Additionally, you can export your tasks in CSV format.
 
 <div class="not-content">
   <Comments />

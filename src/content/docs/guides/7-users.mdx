@@ -1,0 +1,36 @@
+---
+title: Managing Users
+description:
+  This guide will help you understand how to manage registered users in
+  your application.
+---
+
+import Comments from "../../../components/Utterances.astro";
+
+When the application is first opened and and you try to login you will become the first user of the application. This user will be the administrator with roles as Super Admin of the application and will have access to all the features of the application. You as a super admin can create new users and assign them roles and permissions.
+This application has 4 roles:
+
+1. Super Admin
+2. Admin
+3. Manager
+4. User
+
+It's important to note that the `Super Admin` is solely responsible for inviting other users to the application and assigning them roles and permissions. The invited users will receive an email containing a sign-up link, allowing them to register for the application. Upon registration, they'll gain access to the application with the default User role. The Super Admin has the authority to modify a user's role, upgrading them to `Admin` or `Manager` status as needed.
+
+For a comprehensive visual guide on how to invite users, assign roles, and manage permissions, I recommend watching the instructional video provided.
+
+<div class="not-content ml-10">
+  <iframe
+    width="730"
+    height="400"
+    src="https://www.youtube.com/embed/hta3VDLJlfg"
+    title="YouTube video player"
+    frameborder="0"
+    allow=""
+    allowfullscreen
+  ></iframe>
+</div>
+
+<div class="not-content">
+  <Comments />
+</div>
